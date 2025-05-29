@@ -33,12 +33,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle }) => {
           <h2 className="text-headline-small md:text-headline-medium font-regular text-on-surface-variant mt-4 mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
             {subtitle}
           </h2>
-          
-          <div className="mt-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <button className="px-8 py-3 bg-primary text-on-primary text-label-large rounded-full shadow-elevation-2 hover:shadow-elevation-3 transition-shadow duration-300">
-              Conocer más
-            </button>
-          </div>
         </div>
       </div>
     </section>

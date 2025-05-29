@@ -26,35 +26,27 @@ const LogosSection: React.FC<LogosSectionProps> = ({ id, items, description }) =
                 key={index} 
                 className="flex flex-col items-center justify-center p-6 bg-surface rounded-lg shadow-elevation-1 hover:shadow-elevation-2 transition-all duration-300 h-48"
               >
-                {/* Logo or fallback */}
+                {/* Logo with fallback */}
                 <div className="flex items-center justify-center h-20 mb-4">
-                  {/* Check if we should try to load the logo or use fallback */}
-                  {item.logo.includes('/logos/') ? (
-                    <div className="flex items-center justify-center p-4 bg-surface-container rounded-lg border border-outline-variant">
-                      <span className="text-title-medium text-on-surface-variant font-medium text-center">
-                        {item.name}
-                      </span>
-                    </div>
-                  ) : (
-                    <img 
-                      src={item.logo} 
-                      alt={item.name} 
-                      className="max-h-full max-w-full object-contain" 
-                      onError={(e) => {
-                        // On error, replace with text
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        const parent = target.parentElement;
-                        if (parent) {
-                          const span = document.createElement('span');
-                          span.className = 'text-title-medium text-on-surface-variant font-medium text-center';
-                          span.textContent = item.name;
-                          parent.appendChild(span);
-                        }
-                      }}
-                    />
-                  )}
-                </div>
+  <div className="flex items-center justify-center w-24 h-16 p-4 bg-surface-container-highest rounded-lg border border-outline-variant">
+    <img 
+      src={item.logo} 
+      alt={item.name} 
+      className="h-12 w-12 object-contain" 
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        const parent = target.parentElement;
+        if (parent) {
+          const span = document.createElement('span');
+          span.className = 'text-title-medium text-on-surface-variant font-medium text-center';
+          span.textContent = item.name;
+          parent.appendChild(span);
+        }
+      }}
+    />
+  </div>
+</div>
                 <h3 className="text-title-small text-on-surface text-center mt-2">{item.name}</h3>
               </div>
             ))}

@@ -23,19 +23,19 @@ function App() {
       items: [
         {
           name: "AISTECH SPACE, S.L.",
-          logo: "/logos/aistech-space.svg",
+          logo: "/aistech.png",
         },
         {
           name: "KREIOS SPACE, S.L.",
-          logo: "/logos/kreios-space.svg",
+          logo: "/kreios-space.png",
         },
         {
           name: "TELESPAZIO IBERICA, S.L.",
-          logo: "/logos/telespazio-iberica.svg",
+          logo: "/telespazio-iberica.png",
         },
         {
           name: "UNIVERSIDAD DE VIGO",
-          logo: "/logos/universidad-vigo.svg",
+          logo: "/universidad-vigo.png",
         },
       ],
     },
@@ -67,7 +67,7 @@ function App() {
       items: [
         {
           name: "CDTI",
-          logo: "/logos/cdti.svg",
+          logo: "/cdti.png",
         },
       ],
       description: "Proyecto subvencionado por el Centro para el Desarrollo Tecnológico y la Innovación E.P.E., (CDTI) mediante la concesión de ayudas destinadas al \"Programa Tecnológico Espacial\" en el marco del Plan de Recuperación, Transformación y Resiliencia (PERTEs Aeroespacial y de Salud de Vanguardia)",
