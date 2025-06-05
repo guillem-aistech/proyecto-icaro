@@ -20,18 +20,18 @@ const LogosSection: React.FC<LogosSectionProps> = ({ id, items, description }) =
             {id === 'consorcio' ? 'Consorcio' : 'Financiadores'}
           </h2>
           
-          <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center`}>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-4 place-items-center">
             {items.map((item, index) => (
               <div 
                 key={index}
                 className="flex flex-col items-center justify-center"
               >
                 {/* Logo with fallback */}
-                <div className="flex items-center justify-center h-80 w-full">
+                <div className="flex items-center justify-center h-48 w-full">
                   <img 
                     src={item.logo} 
                     alt={item.name} 
-                    className="mx-auto h-48 w-48 object-contain" 
+                    className="mx-auto h-40 w-40 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-60 lg:w-60 object-contain" 
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
