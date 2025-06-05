@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSection from './components/HeroSection';
 import TextSection from './components/TextSection';
 import LogosSection from './components/LogosSection';
@@ -31,7 +30,7 @@ function App() {
         },
         {
           name: "TELESPAZIO IBERICA, S.L.",
-          logo: "/telespazio-iberica.png",
+          logo: "/telespazio.png",
         },
         {
           name: "UNIVERSIDAD DE VIGO",
@@ -69,14 +68,20 @@ function App() {
           name: "CDTI",
           logo: "/cdti.png",
         },
+        {
+          name: "Ministerio de Ciencia, Innovación y Universidades",
+          logo: "/ministerio.png",
+        },
+        {
+          name: "Plan de Recuperación, Transformación y Resiliencia",
+          logo: "/fondos-resiliencia.png",
+        },
+        {
+          name: "Unión Europea NextGenerationEU",
+          logo: "/union-europea.png",
+        },
       ],
       description: "Proyecto subvencionado por el Centro para el Desarrollo Tecnológico y la Innovación E.P.E., (CDTI) mediante la concesión de ayudas destinadas al \"Programa Tecnológico Espacial\" en el marco del Plan de Recuperación, Transformación y Resiliencia (PERTEs Aeroespacial y de Salud de Vanguardia)",
-    },
-    footer: {
-      content: `AISTECH SPACE, S.L.
-      Cami Can Camps 17, 17-19 (Edificio VINSON - Oficina 2C)
-      Sant Cugat del Vallès, 08174. Barcelona
-      e-mail: info@aistechspace.com | Tel: +34 935 481 193`,
     },
   };
 
@@ -112,9 +117,7 @@ function App() {
       />
       
       {/* Footer Section */}
-      <FooterSection 
-        content={projectData.footer.content} 
-      />
+      <FooterSection />
     </div>
   );
 }

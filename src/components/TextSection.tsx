@@ -28,13 +28,12 @@ const TextSection: React.FC<TextSectionProps> = ({ content }) => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg">
-            <p className="text-body-large text-on-surface mb-8 leading-relaxed">
+            <p className="text-headline-small text-on-surface mb-8 leading-relaxed">
               {mainText}
             </p>
             
             {listItems.length > 0 && (
               <div className="mt-6">
-                <h3 className="text-title-medium text-on-surface mb-4">Desarrollo en 4 campos principales:</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   {listItems.filter(item => item.number).map((item, index) => (
                     <div 
@@ -48,7 +47,7 @@ const TextSection: React.FC<TextSectionProps> = ({ content }) => {
                           </div>
                         </div>
                         <div>
-                          <p className="text-body-medium text-on-surface">{item.text}</p>
+                          <p className="text-body-large text-on-surface">{item.text}</p>
                         </div>
                       </div>
                     </div>

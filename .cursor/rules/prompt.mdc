@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Crea una landing page responsive para el “Proyecto ÍCARO” con los siguiente requisitos.
+
+- Los típicos parámetros: title..., SEO ready.
+- Usa Material Design 3: define tokens de color (`primary`, `onPrimary`, `secondary`...) y tipografía (`displayLarge`, `displayMedium`, `displaySmall`...). Usa distintas surfaces (surfaceVariant, surfaceContainerLowest...) para las secciones. Primary color orange
+- Usa el último Tailwind.

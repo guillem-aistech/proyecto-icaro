@@ -14,11 +14,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ features }) => {
     <section id="objetivos\" className="py-20 bg-surface-container-high">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-headline-medium text-on-surface text-center mb-4">Objetivos</h2>
-          <p className="text-body-large text-on-surface-variant text-center mb-16 max-w-2xl mx-auto">
-            Nuestros principales objetivos para el desarrollo del Proyecto ÍCARO
-          </p>
-          
+          <h2 className="text-headline-large text-on-surface text-center mb-12">Objetivos</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div 
@@ -37,7 +33,7 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({ features }) => {
                   </div>
                 </div>
                 
-                <p className="text-body-medium text-on-surface ml-16">
+                <p className="text-body-large text-on-surface ml-16">
                   {feature.text}
                 </p>
               </div>
